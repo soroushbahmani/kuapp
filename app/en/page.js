@@ -21,11 +21,13 @@ import LogoCardOne from "@/svg/LogoCardOne";
 import LogoCardSix from "@/svg/LogoCardSix";
 import LogoCardThree from "@/svg/LogoCardThree";
 import LogoCardTwo from "@/svg/LogoCardTwo";
+import Link from "next/link";
 
-import {  useState } from "react";
+
+import { useState } from "react";
 
 
-export default  function Home({params}) {
+export default function Home({ params }) {
 
   const [dropdown, set_dropdwon] = useState(false)
   const [url, set_url] = useState('home')
@@ -71,16 +73,7 @@ export default  function Home({params}) {
       {/* header */}
       <header className="shadow-md select-none sticky top-0 z-10 bg-white">
         <div className="container mx-auto flex justify-between h-full">
-          <div className="flex items-center py-2 h-full ">
-            <div className="2xl:text-h9 xl:h-9 lg:h-9 md:h8 sm:h-5 xs:h-5">
-              <Logo />
-            </div>
 
-            <h1 className="px-2  2xl:text-5xl xl:text-5xl lg:text-5xl md:text-2xl sm:text-2xl xs:text-2xl text-orange_1">
-              KUAPP 
-            </h1>
-
-          </div>
 
           <div className="flex ">
             {
@@ -90,14 +83,14 @@ export default  function Home({params}) {
 
             }
 
-            <div className={`2xl:block xl:block lg:block md:hidden sm:hidden xs:hidden cursor-pointer text-orange_1 hover:text-orange-400 hover:border-orange-400 mx-6 flex items-center h-full   ${url == 'home' ? 'border-b-4 border-orange_1' : ''}`} onClick={() => set_url('home')}>
+            <div className={`2xl:block xl:block lg:block pt-1.5 md:hidden sm:hidden xs:hidden cursor-pointer text-orange_1 hover:text-orange-400 hover:border-orange-400 mx-6 flex items-center h-full   ${url == 'home' ? 'border-b-4 border-orange_1' : ''}`} onClick={() => set_url('home')}>
 
-              <a className="text-xl h-full py-3 block" href="#home" >Home</a>
+              <a className="text-xl h-full py-5 block" href="#home" >Home</a>
             </div>
 
-            <div className={`2xl:block xl:block lg:block md:hidden sm:hidden xs:hidden cursor-pointer text-orange_1 hover:text-orange-400 mx-6 flex items-center h-full ${url == 'contact' ? 'border-b-4 border-orange_1' : ''}`} onClick={() => set_url('contact')}>
+            <div className={`2xl:block xl:block lg:block pt-1.5 md:hidden sm:hidden xs:hidden cursor-pointer text-orange_1 hover:text-orange-400 mx-6 flex items-center h-full ${url == 'contact' ? 'border-b-4 border-orange_1' : ''}`} onClick={() => set_url('contact')}>
 
-              <a className="text-xl h-full py-3 block" href="#footer" >Contact us</a>
+              <a className="text-xl h-full py-5 block" href="#footer" >Contact us</a>
             </div>
 
 
@@ -114,9 +107,15 @@ export default  function Home({params}) {
 
 
               <div className={` bg-white shadow-lg absolute  2xl:top-16 xl:top-16 lg:top-16 md:top-12 sm:top-14 xs:top-12 right-0 w-20 flex-col items-center ${dropdown == true ? 'flex' : 'hidden'} `}>
-                <div className=" p-2 hover:bg-orange-100 bg-orange-100 disabled:block w-full text-center">English</div>
-                <div className="border-y p-2 hover:bg-orange-100 border-dashed text-center w-full disabled:block">کوردی</div>
-                <div className="p-2  w-full hover:bg-orange-100 disabled:block  text-center">فارسی</div>
+                <div className="  hover:bg-orange-100 bg-orange-100 w-full text-center">
+                  <Link href={'/en'} className="block h-full w-full p-2">English</Link>
+                </div>
+                <div className="border-y hover:bg-orange-100   border-dashed text-center w-full disabled:block">
+                  <Link href='/ku' className="block h-full w-full p-2">کوردی</Link>
+                </div>
+                <div className=" w-full hover:bg-orange-100 disabled:block  text-center">
+                  <Link href='/fa' className="block h-full w-full p-2">فارسی</Link>
+                </div>
               </div>
             </div>
 
@@ -127,6 +126,17 @@ export default  function Home({params}) {
 
           </div>
 
+          <div className="flex items-center py-5 h-full ">
+            <h1 className="px-2  2xl:text-5xl xl:text-5xl lg:text-5xl md:text-2xl sm:text-2xl xs:text-2xl text-orange_1">
+              KUAPP
+            </h1>
+            <div className="2xl:h-12 xl:h-9 lg:h-9 md:h8 sm:h-5 xs:h-5">
+              <Logo />
+            </div>
+
+
+
+          </div>
 
         </div>
       </header>
@@ -265,14 +275,14 @@ export default  function Home({params}) {
           </div>
 
 
-          <div className="flex flex-col justify-around xl:w-5/12 lg:w-5/12 2xl:block xl:block lg:block md:hidden sm:hidden xs:hidden p-16">
-            <div className="  mx-auto ">
+          <div className="flex flex-col   xl:w-5/12 lg:w-5/12 2xl:block xl:block lg:block md:hidden sm:hidden xs:hidden ">
+            <div className="   flex justify-center ">
               <IconCardOne />
             </div>
-            <div className=" mx-auto mt-32">
+            <div className="  mt-32 flex justify-center">
               <IconCardTwo />
             </div>
-            <div className="mx-auto mt-32">
+            <div className=" mt-32 flex justify-center">
               <IconCardThree />
             </div>
           </div>
@@ -282,7 +292,7 @@ export default  function Home({params}) {
 
 
       {/* footer */}
-      <footer id="footer" className="bg-gray_1 py-8">
+      <footer id="footer" className="bg-gray_1 py-16 mt-28">
         <div className="container mx-auto flex flex-wrap">
 
           <div className="basis-full">

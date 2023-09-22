@@ -21,11 +21,12 @@ import LogoCardOne from "@/svg/LogoCardOne";
 import LogoCardSix from "@/svg/LogoCardSix";
 import LogoCardThree from "@/svg/LogoCardThree";
 import LogoCardTwo from "@/svg/LogoCardTwo";
+import Link from "next/link";
 
-import {  useState } from "react";
+import { useState } from "react";
 
 
-export default  function Home({params}) {
+export default function Home() {
 
   const [dropdown, set_dropdwon] = useState(false)
   const [url, set_url] = useState('home')
@@ -65,7 +66,7 @@ export default  function Home({params}) {
 
   return (
 
-    <main className='' >
+    <main className='' dir="rtl" >
 
       <div id="home">  </div>
       {/* header */}
@@ -77,7 +78,7 @@ export default  function Home({params}) {
             </div>
 
             <h1 className="px-2  2xl:text-5xl xl:text-5xl lg:text-5xl md:text-2xl sm:text-2xl xs:text-2xl text-orange_1">
-              KUAPP 
+              کوآپ
             </h1>
 
           </div>
@@ -92,12 +93,12 @@ export default  function Home({params}) {
 
             <div className={`2xl:block xl:block lg:block md:hidden sm:hidden xs:hidden cursor-pointer text-orange_1 hover:text-orange-400 hover:border-orange-400 mx-6 flex items-center h-full   ${url == 'home' ? 'border-b-4 border-orange_1' : ''}`} onClick={() => set_url('home')}>
 
-              <a className="text-xl h-full py-3 block" href="#home" >Home</a>
+              <a className="text-xl h-full py-3 block" href="#home" >خانه</a>
             </div>
 
             <div className={`2xl:block xl:block lg:block md:hidden sm:hidden xs:hidden cursor-pointer text-orange_1 hover:text-orange-400 mx-6 flex items-center h-full ${url == 'contact' ? 'border-b-4 border-orange_1' : ''}`} onClick={() => set_url('contact')}>
 
-              <a className="text-xl h-full py-3 block" href="#footer" >Contact us</a>
+              <a className="text-xl h-full py-3 block" href="#footer" > تماس با ما</a>
             </div>
 
 
@@ -106,7 +107,7 @@ export default  function Home({params}) {
                 <Language />
               </div>
               <span className=" px-2 text-xl">
-                English
+              کوردی
               </span>
               <div className="h-2">
                 <ArrowBottom />
@@ -114,9 +115,15 @@ export default  function Home({params}) {
 
 
               <div className={` bg-white shadow-lg absolute  2xl:top-16 xl:top-16 lg:top-16 md:top-12 sm:top-14 xs:top-12 right-0 w-20 flex-col items-center ${dropdown == true ? 'flex' : 'hidden'} `}>
-                <div className=" p-2 hover:bg-orange-100 bg-orange-100 disabled:block w-full text-center">English</div>
-                <div className="border-y p-2 hover:bg-orange-100 border-dashed text-center w-full disabled:block">کوردی</div>
-                <div className="p-2  w-full hover:bg-orange-100 disabled:block  text-center">فارسی</div>
+                <div className="  hover:bg-orange-100  w-full text-center">
+                  <Link href={'/en'} className="block h-full w-full p-2">English</Link>
+                </div>
+                <div className="border-y hover:bg-orange-100  bg-orange-100 border-dashed text-center w-full disabled:block">
+                  <Link href='/ku' className="block h-full w-full p-2">کوردی</Link>
+                </div>
+                <div className=" w-full hover:bg-orange-100 disabled:block  text-center">
+                  <Link href='/fa' className="block h-full w-full p-2">فارسی</Link>
+                </div>
               </div>
             </div>
 
