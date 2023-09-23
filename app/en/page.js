@@ -1,9 +1,5 @@
 "use client";
 import '../globals.css'
-import localFont from 'next/font/local';
-
-
-const myFont = localFont({ src: '../../font/iransansdn.ttf' })
 import ArrowBottom from "@/svg/ArrowBottom";
 import IconAddress from "@/svg/IconAddress";
 import IconCardOne from "@/svg/IconCardOne";
