@@ -89,11 +89,11 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="flex justify-end items-center py-5 xs:py-3 2xs:py-3 3xs:py-3 4xs:py-3 h-full xs:w-24 2xs:w-24 3xs:w-24 4xs:w-24">
+          <div className="flex justify-end items-center py-5 xs:py-3 2xs:py-3 3xs:py-3 4xs:py-3 h-full 2xl:w-52 xl:w-52 lg:w-52 md:w-52 sm:w-52 xs:w-24 2xs:w-24 3xs:w-24 4xs:w-24">
             <h1 className="px-2 2xl:text-4xl xl:text-3xl lg:text-5xl md:text-2xl sm:text-2xl xs:text-2xl 2xs:text-xl 3xs:text-lg 4xs:text-base text-orange_1">
               کواپ
             </h1>
-            <div className="2xl:h-12 xl:h-9 lg:h-9 md:h8 sm:h-5 xs:h-5 2xs:h-6 3xs:h-5 4xs:h-5">
+            <div className="2xl:h-12 xl:h-8 lg:h-9 md:h8 sm:h-5 xs:h-5 2xs:h-6 3xs:h-5 4xs:h-5">
               <Logo />
             </div>
 
@@ -115,7 +115,7 @@ export default function Home() {
 
         {/* cards decktop */}
         <div className="flex flex-wrap flex-row">
-          <div className="flex flex-col xl:w-7/12 lg:w-7/12 md:w-full  xs:items-end 2xs:items-end 3xs:items-end 4xs:items-end ">
+          <div className="flex flex-col xl:w-7/12 lg:w-7/12 md:w-full xs:items-end 2xs:items-end 3xs:items-end 4xs:items-end ">
             {/* card 1 */}
             <div className='relative 2xl:hidden xl:hidden lg:hidden md:hidden sm:hidden xs:block 2xs:block 3xs:block 4xs:block w-3/5'>
               <RectangelOne />
@@ -267,7 +267,7 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <div className="flex flex-col   xl:w-5/12 lg:w-5/12 2xl:block xl:block lg:block md:block sm:hidden xs:hidden  2xs:hidden 3xs:hidden 4xs:hidden ">
+          <div className="flex flex-col   xl:w-5/12 lg:w-5/12 2xl:block xl:block lg:block md:hidden sm:hidden xs:hidden  2xs:hidden 3xs:hidden 4xs:hidden ">
             <div className="   flex justify-center ">
               <IconCardOne />
             </div>
@@ -360,31 +360,31 @@ export default function Home() {
             </h2>
 
             <div className="flex flex-wrap justify-center w-full">
-              <div className="mx-1 xs:h-4  2xs:h-8 3xs:h-8 4xh:h-8 xs:w-4  2xs:w-8 3xs:w-8 4xh:w-8  ">
+              <div className="mx-1  2xl:h-12 xl:h-12 lg:h-12 md:h-12 sm:w-10 xs:h-4 2xs:h-8 3xs:h-8 4xh:h-8 xs:w-4 2xs:w-8 3xs:w-8 4xh:w-8  ">
                 <IconTwitter />
               </div>
-              <div className="mx-1 xs:h-4  2xs:h-8 3xs:h-8 4xh:h-8 xs:w-4  2xs:w-8 3xs:w-8 4xh:w-8">
+              <div className="mx-1  2xl:h-12 xl:h-12 lg:h-12 md:h-12 sm:w-10 xs:h-4 2xs:h-8 3xs:h-8 4xh:h-8 xs:w-4 2xs:w-8 3xs:w-8 4xh:w-8">
 
                 <a href="https://wa.me/+989355950555/" className='decoration-0 block h-full w-full text-inherit' target='_blank'>
                   <IconWhatsApp />
                 </a>
               </div>
-              <div className="mx-1 xs:h-4  2xs:h-8 3xs:h-8 4xh:h-8 xs:w-4  2xs:w-8 3xs:w-8 4xh:w-8">
+              <div className="mx-1  2xl:h-12 xl:h-12 lg:h-12 md:h-12 sm:w-10 xs:h-4 2xs:h-8 3xs:h-8 4xh:h-8 xs:w-4 2xs:w-8 3xs:w-8 4xh:w-8">
                 <a href="http://t.me/Muhammadako/" className='decoration-0 block h-full w-full text-inherit' target='_blank'>
                   <IconTelegram />
                 </a>
               </div>
-              {/* <div className="mx-1 xs:h-4  2xs:h-8 3xs:h-8 4xh:h-8 xs:w-4  2xs:w-8 3xs:w-8 4xh:w-8">
+              {/* <div className="mx-1  2xl:h-12 xl:h-12 lg:h-12 md:h-12 sm:w-10 xs:h-4 2xs:h-8 3xs:h-8 4xh:h-8 xs:w-4 2xs:w-8 3xs:w-8 4xh:w-8">
                 <IconFaceBook />
               </div>
-              <div className="mx-1 xs:h-4  2xs:h-8 3xs:h-8 4xh:h-8 xs:w-4  2xs:w-8 3xs:w-8 4xh:w-8˝">
+              <div className="mx-1  2xl:h-12 xl:h-12 lg:h-12 md:h-12 sm:w-10 xs:h-4 2xs:h-8 3xs:h-8 4xh:h-8 xs:w-4 2xs:w-8 3xs:w-8 4xh:w-8˝">
                 <IconInstagram />
               </div> */}
             </div>
           </div>
           <div className=' flex items-center py-4 text-center w-full justify-center  text-dark_1 opacity-80'>
             <IconCOpyRight />
-            <p className='text-lg xs:text-sm 2xs:text-[12px] 3xs:text-[10px] 4xs:text-[8px]  px-1'>
+            <p className='text-lg xs:text-sm 2xl:text-sm xl:text-sm lg:text-sm md:text-sm sm:text-sm 2xs:text-[12px] 3xs:text-[10px] 4xs:text-[8px]  px-1'>
               تمامی حقوق کپی رایت برای وب سایت کرد بازرگان محفوظ است
             </p>
           </div>

@@ -90,16 +90,19 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="flex justify-end items-center py-5 xs:py-3 2xs:py-3 3xs:py-3 4xs:py-3 h-full xs:w-24 2xs:w-32 3xs:w-24 4xs:w-24">
-            <h1 className="px-2 relative 2xs:top-1 2xl:text-4xl xl:text-3xl lg:text-5xl md:text-2xl sm:text-2xl xs:text-2xl 2xs:text-2xl 3xs:text-lg 4xs:text-base text-orange_1">
+
+
+          <div className="flex justify-end items-center py-5 xs:py-3 2xs:py-3 3xs:py-3 4xs:py-3 h-full 2xl:w-52  xl:w-52 lg:w-52 md:w-52 xs:w-24 2xs:w-24 3xs:w-24 4xs:w-24">
+            <h1 className="px-2 2xl:text-4xl xl:text-3xl lg:text-5xl md:text-2xl sm:text-2xl xs:text-2xl 2xs:text-xl 3xs:text-lg 4xs:text-base text-orange_1">
               KUAPP
             </h1>
-            <div className="2xl:h-12 xl:h-9 lg:h-9 md:h8 sm:h-5 xs:h-5 2xs:h-6 3xs:h-5 4xs:h-5">
+            <div className="2xl:h-10 xl:h-10 lg:h-7 md:h8 sm:h-5 xs:h-5 2xs:h-6 3xs:h-5 4xs:h-5">
               <Logo />
             </div>
-
-
           </div>
+
+
+
         </div>
       </header>
 
@@ -139,7 +142,7 @@ export default function Home() {
                     Smart Home
                   </h2>
                 </div>
-                <p className="text-xl xs:text-lg text-justify 2xs:text-base 3xs:text-base 4xs:text-base px-12 2xs:px-4 3xs:px-3 4xs:px-2 leading-8 pt-6 ">
+                <p className="text-xl xs:text-lg text-center 2xs:text-base 3xs:text-base 4xs:text-base px-12 2xs:px-4 3xs:px-3 4xs:px-2 leading-8 pt-6 ">
                   Smart home is done with the aim of increasing the comfort, convenience and security of the residents
                   And in a smart way, it will reduce the consumption of electricity and as a result, reduce the amount of the electricity bill.
                 </p>
@@ -254,7 +257,7 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <div className="flex flex-col   xl:w-5/12 lg:w-5/12 2xl:block xl:block lg:block md:block sm:hidden xs:hidden  2xs:hidden 3xs:hidden 4xs:hidden ">
+          <div className="flex flex-col  xl:w-5/12 lg:w-5/12 2xl:block xl:block lg:block md:hidden sm:hidden xs:hidden  2xs:hidden 3xs:hidden 4xs:hidden ">
             <div className="   flex justify-center ">
               <IconCardOne />
             </div>
@@ -345,16 +348,16 @@ export default function Home() {
             </h2>
 
             <div className="flex flex-wrap justify-center w-full">
-              <div className="mx-1 xs:h-4  2xs:h-8 3xs:h-8 4xh:h-8 xs:w-4  2xs:w-8 3xs:w-8 4xh:w-8  ">
+              <div className="mx-1  2xl:h-12 xl:h-12 lg:h-12 md:h-12 sm:w-10 xs:h-4 2xs:h-8 3xs:h-8 4xh:h-8 xs:w-4 2xs:w-8 3xs:w-8 4xh:w-8  ">
                 <IconTwitter />
               </div>
-              <div className="mx-1 xs:h-4  2xs:h-8 3xs:h-8 4xh:h-8 xs:w-4  2xs:w-8 3xs:w-8 4xh:w-8">
+              <div className="mx-1  2xl:h-12 xl:h-12 lg:h-12 md:h-12 sm:w-10 xs:h-4 2xs:h-8 3xs:h-8 4xh:h-8 xs:w-4 2xs:w-8 3xs:w-8 4xh:w-8">
 
                 <a href="https://wa.me/+989355950555/" className='decoration-0 block h-full w-full text-inherit' target='_blank'>
                   <IconWhatsApp />
                 </a>
               </div>
-              <div className="mx-1 xs:h-4  2xs:h-8 3xs:h-8 4xh:h-8 xs:w-4  2xs:w-8 3xs:w-8 4xh:w-8">
+              <div className="mx-1  2xl:h-12 xl:h-12 lg:h-12 md:h-12 sm:w-10 xs:h-4 2xs:h-8 3xs:h-8 4xh:h-8 xs:w-4 2xs:w-8 3xs:w-8 4xh:w-8">
                 <a href="http://t.me/Muhammadako/" className='decoration-0 block h-full w-full text-inherit' target='_blank'>
                   <IconTelegram />
                 </a>
@@ -369,7 +372,7 @@ export default function Home() {
           </div>
           <div className=' flex items-center py-4 text-center w-full justify-center text-dark_1 opacity-80'>
             <IconCOpyRight />
-            <p className='text-lg xs:text-[10px] 2xs:text-[10px] 3xs:text-[10px] 4xs:text-[8px] px-1 pt-1'>
+            <p className='2xl:text-sm xl:text-sm lg:text-sm md:text-sm sm:text-sm xs:text-[10px] 2xs:text-[10px] 3xs:text-[10px] 4xs:text-[8px] px-1 pt-1'>
               All copyrights are reserved for the Kurdish Bazargan website
             </p>
           </div>
