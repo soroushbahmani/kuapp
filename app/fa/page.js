@@ -10,7 +10,6 @@ import IconCardOne from "@/svg/IconCardOne";
 import IconCardThree from "@/svg/IconCardThree";
 import IconCardTwo from "@/svg/IconCardTwo";
 import IconChat from "@/svg/IconChat";
-import IconInstagram from "@/svg/IconInstagram";
 import IconMessage from "@/svg/IconMessage";
 import IconPhone from "@/svg/IconPhone";
 import IconTelegram from "@/svg/IconTelegram";
@@ -30,7 +29,6 @@ import RectangelOne from '@/svg/RectangelOne';
 import RectangelThree from '@/svg/RectangelThree';
 import IconHeadPhone from '@/svg/IconHeadPhone';
 import IconCOpyRight from '@/svg/IconCopyRight';
-import IconFaceBook from '@/svg/IconFaceBook';
 
 
 export default function Home() {
@@ -48,7 +46,7 @@ export default function Home() {
       <div id="home">  </div>
       {/* header */}
       <header className="shadow-md select-none sticky top-0 z-[1000] bg-white">
-        <div className="container   mx-auto flex justify-between h-full">
+        <div className="container mx-auto flex justify-between h-full">
           <div className="flex ">
             {
               dropdown == true ?
@@ -66,14 +64,14 @@ export default function Home() {
 
 
 
-            <div className="mx-6 xs:mx-0 2xs:mx-0 3xs:mx-0 4xs:mx-0 flex py-3 items-center h-full text-orange_1 hover:border-orange-400 hover:text-orange-400 cursor-pointer relative" onClick={dropdownhnadler}>
-              <div className="h-6 xs:h-6 2xs:h-4">
+            <div className=" mx-6 xs:mx-0 2xs:mx-0 3xs:mx-0 4xs:mx-0 flex py-3 items-center h-full text-orange_1 hover:border-orange-400 hover:text-orange-400 cursor-pointer relative" onClick={dropdownhnadler}>
+              <div className="h-6 xs:h-6 2xs:h-4 xs:w-10 2xs:w-6 3xs:w-10 4xs:w-10 ">
                 <Language />
               </div>
-              <span className=" px-2 text-xl xs:text-lg 2xs:text-sm 3xs:text-lg 4xs:text-base">
+              <span className="px-2 xs:px-2 2xs:px-1 3xs:px-1 4xs:px-1 text-xl xs:text-lg 2xs:text-sm 3xs:text-lg 4xs:text-base">
                 فارسی
               </span>
-              <div className="h-2 xs:h-1.5 2xs:h-1.5 3xs:h-1.5 4xs:h-1.5 mt-1">
+              <div className="h-2 xs:w-8 2xs:w-4  3xs:w-4 4xs:w-5  xs:h-1.5 2xs:h-1.5 3xs:h-1.5 4xs:h-1.5 mt-1 ">
                 <ArrowBottom />
               </div>
 
@@ -91,7 +89,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="flex items-center py-5 xs:py-3 2xs:py-3 3xs:py-3 4xs:py-3 h-full ">
+          <div className="flex justify-end items-center py-5 xs:py-3 2xs:py-3 3xs:py-3 4xs:py-3 h-full xs:w-24 2xs:w-24 3xs:w-24 4xs:w-24">
             <h1 className="px-2 2xl:text-4xl xl:text-3xl lg:text-5xl md:text-2xl sm:text-2xl xs:text-2xl 2xs:text-xl 3xs:text-lg 4xs:text-base text-orange_1">
               کواپ
             </h1>
@@ -178,16 +176,16 @@ export default function Home() {
             </div>
 
             {/* card 3 */}
-            <div className=' h-16 w-4/5 flex justify-center items-center pr-15 relative 2xl:hidden xl:hidden lg:hidden md:hidden sm:hidden xs:flex 2xs:flex 3xs:flex 4xs:flex'>
+            <div className=' h-16 w-4/5 flex justify-center items-center pr-15 relative 2xl:hidden xl:hidden lg:hidden md:hidden sm:hidden xs:flex 2xs:flex 3xs:flex 4xs:flex ' >
               <RectangelThree />
-              <div className='h-10 bg-white rounded-lg  shadow-2xl p-2 absolute'>
+              <div className='h-10 w-11 bg-white rounded-lg  shadow-2xl p-2 absolute'>
                 <LogoCardThree />
               </div>
             </div>
             <h2 className=" text-2xl xs:text-xl 2xs:text-lg 3xs:text-md 4xs:text-sm bg-orange_1 text-white w-fit p-1 px-3 rounded-2xl 2xl:hidden xl:hidden lg:hidden md:hidden sm:hidden xs:block 2xs:block 3xs:block 4xs:block xs:self-center 2xs:self-center 3xs:self-center 4xs:self-center">
-              هوشمند سازی ساختمان
+              هوشمندسازی بیزینس های مختلف
             </h2>
-            <div className="relative shadow-xl p-4 py-8 rounded-xl ">
+            <div className="relative shadow-xl p-4 py-8 2xl:mt-6 xl:mt-6 lg:mt-6 md:mt-8 rounded-xl ">
               <div className="flex 2xl:flex xl:flex lg:flex md:flex sm:flex xs:hidden 2xs:hidden 3xs:hidden 4xs:hidden">
                 <div className="flex basis-8">
                   <LogoCardThree />
@@ -196,7 +194,7 @@ export default function Home() {
                   هوشمندسازی بیزینس های مختلف
                 </h2>
               </div>
-              <p className="text-xl xs:text-lg 2xs:text-base 3xs:text-base 4xs:text-base px-12 2xs:px-4 3xs:px-3 4xs:px-2 leading-8 ">
+              <p className="text-xl xs:text-lg 2xs:text-base text-justify 3xs:text-base 4xs:text-base px-12 2xs:px-4 3xs:px-3 4xs:px-2 leading-8 ">
                 دیجیتالی ‌شدن، دیجیتال‌سازی و تحول دیجیتال، سه مفهوم مشابه در
                 هوشمند سازی کسب‌ و کار هستند که کارکردهای متفاوتی دارند.
                 در دیجیتالی شدن، اطلاعات از محیط آنالوگ به محیط دیجیتال
@@ -213,7 +211,7 @@ export default function Home() {
               <div className='relative left-12 h-16 w-4/5 '>
                 <RectangelThree />
               </div>
-              <div className='h-10 bg-white rounded-lg  shadow-2xl p-2 absolute'>
+              <div className='h-10 w-10 bg-white rounded-lg  shadow-2xl p-2 absolute'>
                 <LogoCardFive />
               </div>
             </div>
@@ -225,13 +223,13 @@ export default function Home() {
 
                 <div className=" w-full 2xl:flex xl:flex lg:flex md:flex sm:flex xs:hidden 2xs:hidden 3xs:hidden 4xs:hidden">
                   <div className=" w-8">
-                    <Logo />
+                    <LogoCardFive />
                   </div>
                   <h2 className=" text-2xl xs:text-xl 2xs:text-lg 3xs:text-md 4xs:text-sm 2xs:mt-4 mx-4 pb-4 text-orange_1 ">
                     خدمات بازرگانی، گمرک و ترانزیت از ایران
                   </h2>
                 </div>
-                <p className="text-xl xs:text-lg 2xs:text-base 3xs:text-base 4xs:text-base px-12 py-8 2xs:px-4 3xs:px-3 4xs:px-2 leading-8 ">
+                <p className="text-xl xs:text-lg 2xs:text-base text-justify 3xs:text-base 4xs:text-base px-12 py-8 2xs:px-4 3xs:px-3 4xs:px-2 leading-8 ">
                   امور بازرگانی واردات در شرکت کرد بازرگان بدون واسطه انجام می‌شود
                   و مشاوران ما لحظه به لحظه با شما همراه خواهند بود.
                   با توجه به جهت گیری واردات کالا به سمت حمایت از تولید و واردات
@@ -253,7 +251,7 @@ export default function Home() {
             <h2 className="z-10 xs:mt-[50px] 2xs:mt-[50px] 3xs:mt-[50px] 4xs:mt-[50px] text-2xl xs:text-xl 2xs:text-lg 3xs:text-md 4xs:text-sm bg-orange_1 text-white w-fit p-1 px-3 rounded-2xl 2xl:hidden xl:hidden lg:hidden md:hidden sm:hidden xs:block 2xs:block 3xs:block 4xs:block xs:self-center 2xs:self-center 3xs:self-center 4xs:self-center">
               تولید ژنراتور برق بدون سوخت
             </h2>
-            <div className="shadow-xl p-4 py-8 rounded-xl ">
+            <div className="shadow-xl p-4 py-8 2xl:mb-20 xl:mb-20 lg:mb-20 md:mb-20 rounded-xl ">
               <div className="flex  2xl:flex xl:flex lg:flex md:flex sm:flex xs:hidden 2xs:hidden 3xs:hidden 4xs:hidden">
                 <div className="flex basis-8 ">
                   <LogoCardSix />
@@ -261,7 +259,7 @@ export default function Home() {
                 <h2 className="text-2xl mx-4 pb-4 text-orange_1">
                   تولید ژنراتور برق بدون سوخت                </h2>
               </div>
-              <p className="text-xl xs:text-lg 2xs:text-base 3xs:text-base 4xs:text-base px-12 2xs:px-4 3xs:px-3 4xs:px-2 leading-8  ">
+              <p className="text-xl xs:text-lg 2xs:text-base text-justify 3xs:text-base 4xs:text-base px-12 2xs:px-4 3xs:px-3 4xs:px-2 leading-8  ">
                 درحال حاضر نیروگاه های تولید برق مقادیر هنگفتی از انرژی مصرفی
                 را در قالب حرارت تلف می کنند
                 اکنون این فناوری نوین صنعتی جدید است که با استفاده از انرژی
@@ -319,15 +317,21 @@ export default function Home() {
             </div>
             <div className="flex my-5">
               <IconPhone />
-              <span className="2xl:text-2xl xl:text-2xl lg:text-xl md:text-xl sm:text-lg xs:text-md 2xs:text-base 3xs:text-base text-base pt-2 mx-4 text-dark_1">
-                +98 935 595 0555
+              <span className="2xl:text-2xl xl:text-2xl lg:text-xl md:text-xl sm:text-lg xs:text-md 2xs:text-base 3xs:text-base text-base pt-2 mx-4  text-dark_1">
+                <a href="tel:+989355950555" className='decoration-0 h-full w-full text-inherit'>
+                  <span className='' style={{ direction: 'ltr' }}>۹۳۵-۵۹۵-۰۵۵۵ </span>
+                  <span>۹۸</span>
+                  <span>+</span>
+                </a>
               </span>
             </div>
             <div className="flex mt-5 mb-1">
               <IconMessage />
-              <span className=" 2xl:text-2xl xl:text-2xl lg:text-xl md:text-xl sm:text-lg xs:text-md 2xs:text-base 3xs:text-base text-base  mx-4 text-dark_1">
-                kurdbazergan@gmail.com
-              </span>
+              <a href="mailto:kurdbazergan@gmail.com" className='decoration-0 h-full w-full text-inherit'>
+                <span className=" 2xl:text-2xl xl:text-2xl lg:text-xl md:text-xl sm:text-lg xs:text-md 2xs:text-base 3xs:text-base text-base  mx-4 text-dark_1">
+                  kurdbazergan@gmail.com
+                </span>
+              </a>
             </div>
           </div>
 
@@ -346,7 +350,7 @@ export default function Home() {
                 <IconAddress />
               </div>
               <span className="2xl:text-2xl xl:text-2xl lg:text-xl md:text-xl sm:text-lg xs:text-md 2xs:text-base 3xs:text-base text-base  text-dark_1">
-                استان بخرب ، شهر بئربئ، خیابان تتهن ، کوچه بئذذ ،پلاک 10
+                ایران, کردستان, سنندج, خیابان حسن آباد, جنب ساختمان نقش جهان, طبقەی اول
               </span>
             </div>
           </div>
@@ -356,26 +360,31 @@ export default function Home() {
             </h2>
 
             <div className="flex flex-wrap justify-center w-full">
-              <div className="mx-1">
+              <div className="mx-1 xs:h-4  2xs:h-8 3xs:h-8 4xh:h-8 xs:w-4  2xs:w-8 3xs:w-8 4xh:w-8  ">
                 <IconTwitter />
               </div>
-              <div className="mx-1">
-                <IconWhatsApp />
+              <div className="mx-1 xs:h-4  2xs:h-8 3xs:h-8 4xh:h-8 xs:w-4  2xs:w-8 3xs:w-8 4xh:w-8">
+
+                <a href="https://wa.me/+989355950555/" className='decoration-0 block h-full w-full text-inherit' target='_blank'>
+                  <IconWhatsApp />
+                </a>
               </div>
-              <div className="mx-1">
-                <IconTelegram />
+              <div className="mx-1 xs:h-4  2xs:h-8 3xs:h-8 4xh:h-8 xs:w-4  2xs:w-8 3xs:w-8 4xh:w-8">
+                <a href="http://t.me/Muhammadako/" className='decoration-0 block h-full w-full text-inherit' target='_blank'>
+                  <IconTelegram />
+                </a>
               </div>
-              <div className="mx-1">
+              {/* <div className="mx-1 xs:h-4  2xs:h-8 3xs:h-8 4xh:h-8 xs:w-4  2xs:w-8 3xs:w-8 4xh:w-8">
                 <IconFaceBook />
               </div>
-              <div className="mx-1">
+              <div className="mx-1 xs:h-4  2xs:h-8 3xs:h-8 4xh:h-8 xs:w-4  2xs:w-8 3xs:w-8 4xh:w-8˝">
                 <IconInstagram />
-              </div>
+              </div> */}
             </div>
           </div>
-          <div className=' flex items-center py-4 text-center w-full justify-center  text-dark_1'>
+          <div className=' flex items-center py-4 text-center w-full justify-center  text-dark_1 opacity-80'>
             <IconCOpyRight />
-            <p className='text-lg xs:text-sm 2xs:text-sm 3xs:text-sm 4xs:text-sm  px-2'>
+            <p className='text-lg xs:text-sm 2xs:text-[12px] 3xs:text-[10px] 4xs:text-[8px]  px-1'>
               تمامی حقوق کپی رایت برای وب سایت کرد بازرگان محفوظ است
             </p>
           </div>
