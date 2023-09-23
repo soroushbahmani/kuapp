@@ -1,4 +1,6 @@
 "use client";
+import '../globals.css'
+
 
 import ArrowBottom from "@/svg/ArrowBottom";
 import IconAddress from "@/svg/IconAddress";
@@ -27,7 +29,7 @@ import Link from "next/link";
 import { useState } from "react";
 
 
-export default function Home({ params }) {
+export default function Home( ) {
 
   const [dropdown, set_dropdwon] = useState(false)
   const [url, set_url] = useState('home')

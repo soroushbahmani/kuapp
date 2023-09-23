@@ -1,4 +1,5 @@
 "use client";
+import '../globals.css'
 
 import ArrowBottom from "@/svg/ArrowBottom";
 import IconAddress from "@/svg/IconAddress";
@@ -107,7 +108,7 @@ export default function Home() {
                 <Language />
               </div>
               <span className=" px-2 text-xl">
-              کوردی
+                کوردی
               </span>
               <div className="h-2">
                 <ArrowBottom />

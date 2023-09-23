@@ -7,7 +7,7 @@ import './globals.css'
 function RootLayout({ children,params }) {
 
   return (
-    <html lang={params.lang}>
+    <html >
       <body >{children}</body>
     </html>
   )
