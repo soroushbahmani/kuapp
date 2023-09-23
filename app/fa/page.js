@@ -10,7 +10,6 @@ import IconCardOne from "@/svg/IconCardOne";
 import IconCardThree from "@/svg/IconCardThree";
 import IconCardTwo from "@/svg/IconCardTwo";
 import IconChat from "@/svg/IconChat";
-import IconFaceBook from "@/svg/IconFAceBook";
 import IconInstagram from "@/svg/IconInstagram";
 import IconMessage from "@/svg/IconMessage";
 import IconPhone from "@/svg/IconPhone";
@@ -20,7 +19,6 @@ import IconWhatsApp from "@/svg/IconWhatsApp";
 import Language from "@/svg/Language";
 import Logo from "@/svg/Logo";
 import LogoCardFive from "@/svg/LogoCardFive";
-import LogoCardFour from "@/svg/LogoCardFour";
 import LogoCardOne from "@/svg/LogoCardOne";
 import LogoCardSix from "@/svg/LogoCardSix";
 import LogoCardThree from "@/svg/LogoCardThree";
@@ -30,9 +28,9 @@ import Link from "next/link";
 import { useState } from "react";
 import RectangelOne from '@/svg/RectangelOne';
 import RectangelThree from '@/svg/RectangelThree';
-import RectangelFour from '@/svg/RectangelFour';
 import IconHeadPhone from '@/svg/IconHeadPhone';
 import IconCOpyRight from '@/svg/IconCopyRight';
+import IconFaceBook from '@/svg/IconFaceBook';
 
 
 export default function Home() {
@@ -68,14 +66,14 @@ export default function Home() {
 
 
 
-            <div className="mx-6 flex py-3 items-center h-full text-orange_1 hover:border-orange-400 hover:text-orange-400 cursor-pointer relative" onClick={dropdownhnadler}>
-              <div className="h-6">
+            <div className="mx-6 xs:mx-0 2xs:mx-0 3xs:mx-0 4xs:mx-0 flex py-3 items-center h-full text-orange_1 hover:border-orange-400 hover:text-orange-400 cursor-pointer relative" onClick={dropdownhnadler}>
+              <div className="h-6 xs:h-6 2xs:h-4">
                 <Language />
               </div>
-              <span className=" px-2 text-xl xs:text-lg 2xs:text-lg 3xs:text-lg 4xs:text-base">
+              <span className=" px-2 text-xl xs:text-lg 2xs:text-sm 3xs:text-lg 4xs:text-base">
                 فارسی
               </span>
-              <div className="h-2">
+              <div className="h-2 xs:h-1.5 2xs:h-1.5 3xs:h-1.5 4xs:h-1.5 mt-1">
                 <ArrowBottom />
               </div>
 
@@ -141,7 +139,7 @@ export default function Home() {
                     هوشمند سازی ساختمان
                   </h2>
                 </div>
-                <p className="text-xl xs:text-lg 2xs:text-base 3xs:text-base 4xs:text-base px-12 2xs:px-4 3xs:px-3 4xs:px-2 leading-8 pt-4 ">
+                <p className="text-xl xs:text-lg text-justify 2xs:text-base 3xs:text-base 4xs:text-base px-12 2xs:px-4 3xs:px-3 4xs:px-2 leading-8 pt-6 ">
                   هوشمندسازی خانه با هدف افزایش آسایش، راحتی و
                   امنیت ساکنین انجام می شود و به شکل هوشمندانه ای
                   موجب کاهش مصرف انرژی برق و به طبع آن کاهش
@@ -171,7 +169,7 @@ export default function Home() {
                 </h2>
               </div>
 
-              <p className="text-xl xs:text-lg 2xs:text-base 3xs:text-base 4xs:text-base px-12 2xs:px-4 3xs:px-3 4xs:px-2 leading-8 ">
+              <p className="text-xl xs:text-lg 2xs:text-base text-justify 3xs:text-base 4xs:text-base px-12 2xs:px-4 3xs:px-3 4xs:px-2 leading-8 ">
                 هدف از ایجاد شهر هوشمند، ادغام فناوری اطلاعات و
                 ارتباطات (ICT) و دستگاه های فیزیکی مختلف متصل
                 به شبکه اینترنت اشیا برای بهینه سازی فرآیندهای شهری

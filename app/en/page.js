@@ -8,7 +8,7 @@ import IconCardOne from "@/svg/IconCardOne";
 import IconCardThree from "@/svg/IconCardThree";
 import IconCardTwo from "@/svg/IconCardTwo";
 import IconChat from "@/svg/IconChat";
-import IconFaceBook from "@/svg/IconFAceBook";
+import IconFaceBook from '@/svg/IconFaceBook';
 import IconInstagram from "@/svg/IconInstagram";
 import IconMessage from "@/svg/IconMessage";
 import IconPhone from "@/svg/IconPhone";
