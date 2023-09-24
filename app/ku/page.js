@@ -119,7 +119,7 @@ export default function Home() {
             {/* card 1 */}
             <div className='relative 2xl:hidden xl:hidden lg:hidden md:hidden sm:hidden xs:block 2xs:block 3xs:block 4xs:block w-3/5'>
               <RectangelOne />
-              <div className='h-11 rounded-lg bg-white w-11 shadow-2xl p-2 xs:top-4 2xs:top-4 3xs:top-4 4xs:top-4 top-4left-1/4 absolute'>
+              <div className='h-11 rounded-lg bg-white w-11 shadow-2xl p-2 xs:top-4 2xs:top-4 3xs:top-4 4xs:top-4 top-4 left-1/4 absolute'>
                 <LogoCardOne />
               </div>
             </div>
@@ -137,7 +137,7 @@ export default function Home() {
                     زیرەک کردنەوەی خانوو
                   </h2>
                 </div>
-                <p className="text-xl xs:text-lg text-center 2xs:text-base 3xs:text-base 4xs:text-base px-12 2xs:px-4 3xs:px-3 4xs:px-2 leading-8 pt-6 ">
+                <p className="text-xl xs:text-lg text-justify 2xs:text-base 3xs:text-base 4xs:text-base px-12 2xs:px-4 3xs:px-3 4xs:px-2 leading-8 pt-6 ">
                   زیرەک کردنەوەی خانوو بە مەبەستی زیاد کردنی خۆشگوزەرانی، راحەتی و دڵنیایی نیشتەجێیان ئەکرێ و بە شێوازی زیرەکانە ئەبێتە هۆی کەم کردنەوەی بەکارهێنانی وزەی کارەبا و خەرجی ئەبێت.
                 </p>
               </div>
