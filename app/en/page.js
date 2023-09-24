@@ -25,11 +25,14 @@ import RectangelOne from '@/svg/RectangelOne';
 import RectangelThree from '@/svg/RectangelThree';
 import IconHeadPhone from '@/svg/IconHeadPhone';
 import IconCOpyRight from '@/svg/IconCopyRight';
+import localFont from 'next/font/local';
 
-import { Inter } from 'next/font/google'
+// import { Inter } from 'next/font/google'
 
 // If loading a variable font, you don't need to specify the font weight
-const inter = Inter({ subsets: ['latin'] })
+// const inter = Inter({ subsets: ['latin'] })
+const myFont = localFont({ src: '../../font/NotoSansArabic-Regular.ttf' })
+
 
 
 export default function Home() {
@@ -42,11 +45,11 @@ export default function Home() {
   }
   return (
 
-    <main className={inter.className}  >
+    <main className={myFont.className}  >
 
       <div id="home">  </div>
       {/* header */}
-      <header className="shadow-md select-none sticky top-0 z-[1000] bg-white">
+      <header className="shadow-md select-none sticky top-0 z-[1000] bg-white" dir='rtl'>
         <div className="container mx-auto flex justify-between h-full">
           <div className="flex ">
             {
@@ -57,10 +60,10 @@ export default function Home() {
             }
             {/* homde and contact in menu */}
             <div className={`2xl:flex xl:flex lg:flex md:flex sm:hidden xs:hidden 2xs:hidden 3xs:hidden 4xs:hidden cursor-pointer text-orange_1 hover:text-orange-400 hover:border-orange-400 mx-6 flex items-center h-full   ${url == 'home' ? 'border-b-4 border-orange_1' : ''}`} onClick={() => set_url('home')}>
-              <a className="text-xl h-full  flex justify-center items-center" href="#home" >Home</a>
+              <a className="text-xl h-full  flex justify-center items-center" href="#home" >خانه</a>
             </div>
             <div className={`2xl:flex xl:flex lg:flex md:flex sm:hidden xs:hidden 2xs:hidden 3xs:hidden 4xs:hidden cursor-pointer text-orange_1 hover:text-orange-400 mx-6 flex items-center h-full ${url == 'contact' ? 'border-b-4 border-orange_1' : ''}`} onClick={() => set_url('contact')}>
-              <a className="text-xl h-full flex justify-center items-center  " href="#footer" > Contact us</a>
+              <a className="text-xl h-full flex justify-center items-center  " href="#footer" > تماس با ما</a>
             </div>
 
 
@@ -77,32 +80,29 @@ export default function Home() {
               </div>
 
               <div className={` bg-white shadow-lg absolute  2xl:top-16 xl:top-16 lg:top-16 md:top-12 sm:top-14 xs:top-12 2xs:top-12 3xs:top-12 4xs:top-12 top-12 right-0 w-20 flex-col items-center ${dropdown == true ? 'flex' : 'hidden'} `}>
-                <div className="  hover:bg-orange-100 bg-orange-100  w-full text-center">
+                <div className="  hover:bg-orange-100 bg-orange-100 w-full text-center">
                   <Link href={'/en'} className="block h-full w-full p-2">English</Link>
                 </div>
                 <div className="border-y hover:bg-orange-100  border-dashed text-center w-full disabled:block">
                   <Link href='/ku' className="block h-full w-full p-2">کوردی</Link>
                 </div>
-                <div className=" w-full hover:bg-orange-100  disabled:block  text-center">
+                <div className=" w-full hover:bg-orange-100 disabled:block  text-center">
                   <Link href='/fa' className="block h-full w-full p-2">فارسی</Link>
                 </div>
               </div>
             </div>
           </div>
 
-
-
-          <div className="flex justify-end items-center py-5 xs:py-3 2xs:py-3 3xs:py-3 4xs:py-3 h-full 2xl:w-52  xl:w-52 lg:w-52 md:w-52 xs:w-24 2xs:w-24 3xs:w-24 4xs:w-24">
-            <h1 className="px-2 2xl:text-4xl xl:text-3xl lg:text-5xl md:text-2xl sm:text-2xl xs:text-2xl 2xs:text-xl 3xs:text-lg 4xs:text-base text-orange_1">
+          <div className="flex justify-end items-center py-5 xs:py-3 2xs:py-3 3xs:py-3 4xs:py-3 h-full 2xl:w-52 xl:w-52 lg:w-52 md:w-52 sm:w-52 xs:w-52 2xs:w-52 3xs:w-52 4xs:w-32">
+            <h1 className="px-2 2xl:text-4xl xl:text-3xl lg:text-5xl md:text-2xl h-full sm:text-2xl xs:text-2xl 2xs:text-xl 3xs:text-lg 4xs:text-base text-orange_1  ">
               KUAPP
             </h1>
-            <div className="2xl:h-10 xl:h-10 lg:h-7 md:h8 sm:h-5 xs:h-5 2xs:h-6 3xs:h-5 4xs:h-5">
+            <div className="2xl:h-12 xl:h-8 lg:h-9 md:h8 sm:h-5 xs:h-7 2xs:h-7 3xs:h-6 4xs:h-5  h-full">
               <Logo />
             </div>
+
+
           </div>
-
-
-
         </div>
       </header>
 
@@ -123,16 +123,16 @@ export default function Home() {
             {/* card 1 */}
             <div className='relative 2xl:hidden xl:hidden lg:hidden md:hidden sm:hidden xs:block 2xs:block 3xs:block 4xs:block w-3/5'>
               <RectangelOne />
-              <div className='h-11 rounded-lg bg-white w-11 shadow-2xl p-2 4xs:top-2 top-4 left-1/4 absolute'>
+              <div className='h-11 rounded-lg bg-white w-11 shadow-2xl p-2 xs:top-4 2xs:top-4 3xs:top-4 4xs:top-4 top-4 left-1/4 absolute'>
                 <LogoCardOne />
               </div>
             </div>
-            <h2 className="text-2xl xs:text-xl 2xs:text-lg xs:ml-16  2xs:ml-16 3xs:ml-14 4xs:ml-14 3xs:text-md 4xs:text-sm bg-orange_1 text-white w-fit p-1 px-3 rounded-2xl 2xl:hidden xl:hidden lg:hidden md:hidden sm:hidden xs:block 2xs:block 3xs:block 4xs:block xs:self-center 2xs:self-center 3xs:self-center 4xs:self-center">
+            <h2 className="text-2xl xs:text-xl 2xs:text-lg xs:ml-8 2xs:ml-8 3xs:ml-10 4xs:ml-10 3xs:text-md 4xs:text-sm bg-orange_1 text-white w-fit p-1 px-3 rounded-2xl 2xl:hidden xl:hidden lg:hidden md:hidden sm:hidden xs:block 2xs:block 3xs:block 4xs:block xs:self-center 2xs:self-center 3xs:self-center 4xs:self-center">
               Smart Home
 
             </h2>
             <div className='flex flex-wrap w-full  justify-start relative'>
-              <div className=" relative z-20 shadow-2xl p-4 3xs:pt-0 4xs:pt-0 pt-6 py-8 2xl:my-8 xl:my-8 lg:my-8 md:my-8 sm:my-8 xs:my-0 2xs:my-0 rounded-xl my-8 2xl:w-full xl:w-full lg:w-full md:w-full sm:w-full xs:w-4/5 2xs:w-4/5 3xs:w-4/5 4xs:w-4/5  self-end  bg-slate-50">
+              <div className=" relative z-20 shadow-xl p-4 3xs:pt-0 4xs:pt-0 pt-6 py-8 2xl:my-8 xl:my-8 lg:my-8 md:my-8 sm:my-8 xs:my-0 2xs:my-0 3xs:my-0 4xs:my-0 rounded-xl my-8 2xl:w-full xl:w-full lg:w-full md:w-full sm:w-full xs:w-4/5 2xs:w-4/5 3xs:w-4/5 4xs:w-4/5  self-end  bg-white">
 
                 <div className=" w-full 2xl:flex xl:flex lg:flex md:flex sm:flex xs:hidden 2xs:hidden 3xs:hidden 4xs:hidden">
                   <div className=" w-8">
@@ -142,13 +142,13 @@ export default function Home() {
                     Smart Home
                   </h2>
                 </div>
-                <p className="text-xl xs:text-lg text-center 2xs:text-base 3xs:text-base 4xs:text-base px-12 2xs:px-4 3xs:px-3 4xs:px-2 leading-8 pt-6 ">
+                <p className="text-xl xs:text-lg text-justify 2xs:text-base 3xs:text-base 4xs:text-base px-12 2xs:px-4 3xs:px-3 4xs:px-2 leading-8 pt-6 ">
                   Smart home is done with the aim of increasing the comfort, convenience and security of the residents
                   And in a smart way, it will reduce the consumption of electricity and as a result, reduce the amount of the electricity bill.
                 </p>
               </div>
               <div className=' w-2/5 absolute  right-0 bottom-[-70px] z-10 2xl:hidden xl:hidden lg:hidden md:hidden sm:hidden xs:block 2xs:block 3xs:block 4xs:block'>
-                <div className='relative h-52 border-[3px] border-l-0 border-yellow_1 rounded-r-2xl rounded-br-2xl flex justify-center items-center'>
+                <div className='relative h-52 right-1.5 border-[3px] border-l-0 border-yellow_1 rounded-r-2xl rounded-br-2xl flex justify-center items-center'>
                   <div className='h-11 w-11 right-[-25px] bg-white rounded-lg  shadow-2xl p-2 absolute'>
                     <LogoCardTwo />
                   </div>
@@ -171,7 +171,7 @@ export default function Home() {
                 </h2>
               </div>
 
-              <p className="text-xl xs:text-lg mt-4 2xs:text-base text-justify 3xs:text-base 4xs:text-base px-12 2xs:px-4 3xs:px-3 4xs:px-2 leading-8 ">
+              <p className="text-xl xs:text-lg  2xs:text-base text-justify 3xs:text-base 4xs:text-base px-12 2xs:px-4 3xs:px-3 4xs:px-2 leading-8 ">
                 The purpose of creating a smart city is to integrate information and communication technology (ICT) and various physical devices connected to the Internet of Things network to optimize urban processes and provide services and communication.
               </p>
             </div>
@@ -195,7 +195,7 @@ export default function Home() {
                   Smart Business
                 </h2>
               </div>
-              <p className="text-xl xs:text-lg 2xs:text-base text-justify pt-4 3xs:text-base 4xs:text-base px-12 2xs:px-4 3xs:px-3 4xs:px-2 leading-8 ">
+              <p className="text-xl xs:text-lg  2xs:text-base text-justify 3xs:text-base 4xs:text-base px-12 2xs:px-4 3xs:px-3 4xs:px-2 leading-8 ">
                 Digitization and digital transformation are two similar concepts in business intelligence that have different functions. Using digital data is more efficient than using data in traditional ways. Digitization is different from electronicization. The meaning of digital environment is a combination of online and offline environments, which is important for both employees and customers.
 
               </p>
@@ -214,7 +214,7 @@ export default function Home() {
               Power generators without fuel
             </h2>
             <div className='flex flex-wrap w-full  justify-start relative '>
-              <div className=" relative  z-20 shadow-2xl  p-4 3xs:my-0 4xs:my-0 3xs:py-0 4xs:py-0  sm:my-8 xs:my-0 2xs:my-0 rounded-xl  2xl:w-full xl:w-full lg:w-full md:w-full sm:w-full xs:w-4/5 2xs:w-4/5 3xs:w-4/5 4xs:w-4/5  self-end  bg-slate-50">
+              <div className=" relative z-20 shadow-xl  p-4 3xs:my-0 4xs:my-0 3xs:py-0 4xs:py-0  sm:my-8 xs:my-0 2xs:my-0 rounded-xl  2xl:w-full xl:w-full lg:w-full md:w-full sm:w-full xs:w-4/5 2xs:w-4/5 3xs:w-4/5 4xs:w-4/5  self-end  bg-white">
 
                 <div className=" w-full 2xl:flex xl:flex lg:flex md:flex sm:flex xs:hidden 2xs:hidden 3xs:hidden 4xs:hidden">
                   <div className=" w-8 py-4">
@@ -225,13 +225,13 @@ export default function Home() {
 
                   </h2>
                 </div>
-                <p className="text-xl xs:text-lg 2xs:text-base text-justify 3xs:text-base 4xs:text-base px-12 pb-8 2xs:px-4 3xs:px-3 4xs:px-2 leading-8 ">
+                <p className="text-xl xs:text-lg 2xs:text-base text-justify 3xs:text-base 4xs:text-base px-12 pb-8 xs:py-7 2xs:py-7 3xs:py-7 4xs:py-7 2xs:px-4 3xs:px-3 4xs:px-2 leading-8 ">
                   Currently, power plants waste huge amounts of energy in the form of heat
                   Now this new technology is a new industry that produces electricity using primary energy and gears and practically does not consume fuel.
                 </p>
               </div>
               <div className=' w-2/5 absolute  right-0 bottom-[-70px] z-10 2xl:hidden xl:hidden lg:hidden md:hidden sm:hidden xs:block 2xs:block 3xs:block 4xs:block'>
-                <div className='relative h-52 border-[3px] border-l-0 border-yellow_1 rounded-r-2xl rounded-br-2xl flex justify-center items-center'>
+                <div className='relative h-52 right-1.5 border-[3px] border-l-0 border-yellow_1 rounded-r-2xl rounded-br-2xl flex justify-center items-center'>
                   <div className='h-11 w-11 right-[-25px] bg-white rounded-lg  shadow-2xl p-2 absolute'>
                     <LogoCardSix />
                   </div>
@@ -252,7 +252,7 @@ export default function Home() {
                   Trada,Customs and Transit Services from Iran
                 </h2>
               </div>
-              <p className="text-xl xs:text-lg 2xs:text-base text-justify 3xs:text-base 4xs:text-base px-12 2xs:px-4 3xs:px-3 4xs:px-2 pt-2 leading-8  ">
+              <p className="text-xl xs:text-lg 2xs:text-base text-justify 3xs:text-base 4xs:text-base px-12 2xs:px-4 3xs:px-3 4xs:px-2 leading-8  ">
                 Import business in Kurd Bazargan Company is done without intermediaries and our consultants will be with you moment by moment. Considering the orientation of the import of goods towards supporting the production and import of basic goods, the import of goods has become a specialized topic and activity in this field requires experience, expertise and mastery of international trade laws in all import matters.
               </p>
             </div>
@@ -338,7 +338,7 @@ export default function Home() {
                 <IconAddress />
               </div>
               <span className="2xl:text-2xl xl:text-2xl lg:text-xl md:text-xl sm:text-lg xs:text-md 2xs:text-base 3xs:text-base text-base  text-dark_1">
-                Hasan Abad St Sanandaj Cy Kurdistan Pr
+                Hasan Abad St Sanandaj Cy Kurdistan Pr.
               </span>
             </div>
           </div>

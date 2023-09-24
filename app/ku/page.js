@@ -3,7 +3,7 @@ import '../globals.css'
 import localFont from 'next/font/local';
 
 
-const myFont = localFont({ src: '../../font/AL_ASAID.ttf' })
+const myFont = localFont({ src: '../../font/NotoSansArabic-Regular.ttf' })
 import ArrowBottom from "@/svg/ArrowBottom";
 import IconAddress from "@/svg/IconAddress";
 import IconCardOne from "@/svg/IconCardOne";
@@ -65,7 +65,7 @@ export default function Home() {
 
 
             <div className=" mx-6 xs:mx-0 2xs:mx-0 3xs:mx-0 4xs:mx-0 flex py-3 items-center h-full text-orange_1 hover:border-orange-400 hover:text-orange-400 cursor-pointer relative" onClick={dropdownhnadler}>
-              <div className="h-6 xs:h-6 2xs:h-4 xs:w-10 2xs:w-6 3xs:w-10 4xs:w-10 ">
+              <div className="h-6 xs:h-6 2xs:h-4 3xs:h-4 4xs:h-4 xs:w-10 2xs:w-6 3xs:w-10 4xs:w-10 ">
                 <Language />
               </div>
               <span className="px-2 xs:px-2 2xs:px-1 3xs:px-1 4xs:px-1 text-xl xs:text-lg 2xs:text-sm 3xs:text-lg 4xs:text-base">
@@ -119,15 +119,15 @@ export default function Home() {
             {/* card 1 */}
             <div className='relative 2xl:hidden xl:hidden lg:hidden md:hidden sm:hidden xs:block 2xs:block 3xs:block 4xs:block w-3/5'>
               <RectangelOne />
-              <div className='h-11 rounded-lg bg-white w-11 shadow-2xl p-2 4xs:top-2 top-4 left-1/4 absolute'>
+              <div className='h-11 rounded-lg bg-white w-11 shadow-2xl p-2 xs:top-4 2xs:top-4 3xs:top-4 4xs:top-4 top-4left-1/4 absolute'>
                 <LogoCardOne />
               </div>
             </div>
-            <h2 className="text-2xl xs:text-xl 2xs:text-lg 3xs:text-md 4xs:text-sm bg-orange_1 text-white w-fit p-1 px-3 rounded-2xl 2xl:hidden xl:hidden lg:hidden md:hidden sm:hidden xs:block 2xs:block 3xs:block 4xs:block xs:self-start 2xs:self-start 3xs:self-start 4xs:self-start">
+            <h2 className="text-2xl xs:ml-20 2xs:ml-20 3xs:ml-20 4xs:ml-20 xs:text-xl 2xs:text-lg 3xs:text-md 4xs:text-sm bg-orange_1 text-white w-fit p-1 px-3 rounded-2xl 2xl:hidden xl:hidden lg:hidden md:hidden sm:hidden xs:block 2xs:block 3xs:block 4xs:block xs:self-center 2xs:self-center 3xs:self-center 4xs:self-center">
               زیرەک کردنەوەی خانوو
             </h2>
             <div className='flex flex-wrap w-full  justify-end relative'>
-              <div className=" relative z-20 shadow-2xl p-4 3xs:pt-0 4xs:pt-0 pt-6 py-8 2xl:my-8 xl:my-8 lg:my-8 md:my-8 sm:my-8 xs:my-0 2xs:my-0 rounded-xl my-8 2xl:w-full xl:w-full lg:w-full md:w-full sm:w-full xs:w-4/5 2xs:w-4/5 3xs:w-4/5 4xs:w-4/5  self-end  bg-slate-50">
+              <div className=" relative z-20 shadow-xl p-4 3xs:pt-0 4xs:pt-0 pt-6 py-8 2xl:my-8 xl:my-8 lg:my-8 md:my-8 sm:my-8 xs:my-0 2xs:my-0 rounded-xl my-8 2xl:w-full xl:w-full lg:w-full md:w-full sm:w-full xs:w-4/5 2xs:w-4/5 3xs:w-4/5 4xs:w-4/5  self-end  bg-white 3xs:my-0 4xs:my-0">
 
                 <div className=" w-full 2xl:flex xl:flex lg:flex md:flex sm:flex xs:hidden 2xs:hidden 3xs:hidden 4xs:hidden">
                   <div className=" w-8">
@@ -137,13 +137,13 @@ export default function Home() {
                     زیرەک کردنەوەی خانوو
                   </h2>
                 </div>
-                <p className="text-xl xs:text-lg text-justify 2xs:text-base 3xs:text-base 4xs:text-base px-12 2xs:px-4 3xs:px-3 4xs:px-2 leading-8 pt-6 ">
+                <p className="text-xl xs:text-lg text-center 2xs:text-base 3xs:text-base 4xs:text-base px-12 2xs:px-4 3xs:px-3 4xs:px-2 leading-8 pt-6 ">
                   زیرەک کردنەوەی خانوو بە مەبەستی زیاد کردنی خۆشگوزەرانی، راحەتی و دڵنیایی نیشتەجێیان ئەکرێ و بە شێوازی زیرەکانە ئەبێتە هۆی کەم کردنەوەی بەکارهێنانی وزەی کارەبا و خەرجی ئەبێت.
                 </p>
               </div>
               <div className=' w-2/5 absolute  right-0 bottom-[-70px] z-10 2xl:hidden xl:hidden lg:hidden md:hidden sm:hidden xs:block 2xs:block 3xs:block 4xs:block'>
-                <div className='relative h-52 border-[3px] border-l-0 border-yellow_1 rounded-r-2xl rounded-br-2xl flex justify-center items-center'>
-                  <div className='h-11 w-11 right-[-25px] bg-white rounded-lg  shadow-2xl p-2 absolute'>
+                <div className='relative h-52 right-1.5  border-[3px] border-l-0 border-yellow_1 rounded-r-2xl rounded-br-2xl flex justify-center items-center'>
+                  <div className='h-11 w-11 right-[-25px] bg-white rounded-lg shadow-2xl p-2 absolute'>
                     <LogoCardTwo />
                   </div>
                 </div>
@@ -159,7 +159,7 @@ export default function Home() {
                 <div className="flex basis-8">
                   <LogoCardTwo />
                 </div>
-                <h2 className="text-2xl mx-4  pb-4 text-orange_1">
+                <h2 className="text-2xl mx-4 pb-4 text-orange_1">
                   شاری زیرەک
                 </h2>
               </div>
@@ -199,7 +199,7 @@ export default function Home() {
               <div className='relative left-12 h-16 w-4/5 '>
                 <RectangelThree />
               </div>
-              <div className='h-10 w-10 bg-white rounded-lg  shadow-2xl p-2 absolute'>
+              <div className='h-10 w-10 bg-white rounded-lg shadow-2xl p-2 absolute'>
                 <LogoCardFive />
               </div>
             </div>
@@ -207,7 +207,7 @@ export default function Home() {
               بازرگانی، گومرک و ترانزیت
             </h2>
             <div className='flex flex-wrap w-full  justify-end relative'>
-              <div className=" relative z-20 shadow-2xl p-4 pt-6 py-8 3xs:my-0 4xs:my-0 3xs:py-0 4xs:py-0 2xl:my-8 xl:my-8 lg:my-8 md:my-8 sm:my-8 xs:my-0 2xs:my-0 rounded-xl my-8 2xl:w-full xl:w-full lg:w-full md:w-full sm:w-full xs:w-4/5 2xs:w-4/5 3xs:w-4/5 4xs:w-4/5  self-end  bg-slate-50">
+              <div className=" relative z-20 shadow-xl p-4 pt-6 py-8 3xs:my-0 4xs:my-0 3xs:py-0 4xs:py-0 2xl:my-8 xl:my-8 lg:my-8 md:my-8 sm:my-8 xs:my-0 2xs:my-0 rounded-xl my-8 2xl:w-full xl:w-full lg:w-full md:w-full sm:w-full xs:w-4/5 2xs:w-4/5 3xs:w-4/5 4xs:w-4/5  self-end  bg-white">
 
                 <div className=" w-full 2xl:flex xl:flex lg:flex md:flex sm:flex xs:hidden 2xs:hidden 3xs:hidden 4xs:hidden">
                   <div className=" w-8">
@@ -222,7 +222,7 @@ export default function Home() {
                 </p>
               </div>
               <div className=' w-2/5 absolute  right-0 bottom-[-70px] z-10 2xl:hidden xl:hidden lg:hidden md:hidden sm:hidden xs:block 2xs:block 3xs:block 4xs:block'>
-                <div className='relative h-52 border-[3px] border-l-0 border-yellow_1 rounded-r-2xl rounded-br-2xl flex justify-center items-center'>
+                <div className='relative h-52 right-1.5 border-[3px] border-l-0 border-yellow_1 rounded-r-2xl rounded-br-2xl flex justify-center items-center'>
                   <div className='h-11 w-11 right-[-25px] bg-white rounded-lg  shadow-2xl p-2 absolute'>
                     <LogoCardSix />
                   </div>
@@ -302,8 +302,7 @@ export default function Home() {
               <span className="2xl:text-2xl xl:text-2xl lg:text-xl md:text-xl sm:text-lg xs:text-md 2xs:text-base 3xs:text-base text-base  pt-2 mx-4 text-dark_1 flex">
                 <a href="tel:+989355950555" className='decoration-0 h-full w-full text-inherit'>
                   <span className='text-xl'> ٠٥٥٥ ٥٩٥ ٩٣٥ </span>
-                  <span className='pr-0.5'> ٩٨ </span>
-                  <span>+</span>
+                  <span className='text-xl'> ٩٨+ </span>
                 </a>
               </span>
             </div>
@@ -332,7 +331,7 @@ export default function Home() {
                 <IconAddress />
               </div>
               <span className="2xl:text-2xl xl:text-2xl lg:text-xl md:text-xl sm:text-lg xs:text-md 2xs:text-base 3xs:text-base text-base  text-dark_1">
-                ئێران، سنە، شەقامی حەسەن ئاوا، تالاری نەقش جەهان، قاتی یەکەم
+                ئێران، سنە، شەقامی حەسەن ئاوا، تالاری نەقش جەهان، قاتی یەکەم.
               </span>
             </div>
           </div>
@@ -341,7 +340,7 @@ export default function Home() {
               شبکه های اجتماعی :
             </h2>
 
-            <div className="flex flex-wrap  w-full lg:justify-center  md:justify-start sm:justify-start xs:justify-start 2xs:justify-start 3xs:justify-start 4xs:justify-start">
+            <div className="flex flex-wrap  w-full lg:justify-center  md:justify-start sm:justify-start xs:justify-start 2xs:justify-center 3xs:justify-center 4xs:justify-center">
               <div className="mx-1  2xl:h-12 xl:h-12 lg:h-12 md:h-12 sm:w-10 xs:h-4 2xs:h-8 3xs:h-8 4xh:h-8 xs:w-4 2xs:w-8 3xs:w-8 4xh:w-8  ">
                 <IconTwitter />
               </div>

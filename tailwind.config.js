@@ -28,8 +28,16 @@ module.exports = {
       borderColor: {
         orange_1: '#F26E25',
 
-      }
+      },
+      boxShadow: {
+
+        'xl': '0 4px 40px 3px rgba(0,0,0,16%)',
+        '2xl': '0 0 4px 0 rgba(0,0,0,25%)'
+      },
     },
   },
   plugins: [],
 }
+
+/* offset-x | offset-y | blur-radius | spread-radius | color */
+// box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
